@@ -19,8 +19,29 @@ export default function HomeScreen({ navigation }) {
           />
           <Text style={styles.title}>Onoodor her baina?</Text>
         </View>
-        <View>
+        <View style={styles.vm2}>
           <Text style={styles.txt1}> Дагасан сэдвүүд</Text>
+          <View style={styles.vm2_1}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_2}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_3}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_4}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_5}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_6}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
+          <View style={styles.vm2_7}>
+            <Text style={styles.txt2}>Gantsaardal</Text>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -61,4 +82,9 @@ const styles = StyleSheet.create({
     color: "grey",
     marginLeft: 20,
   },
+  vm2: {
+    flexDirection: "row",
+  },
+  vm2_1: {},
+  vm2_2: {},
 });
