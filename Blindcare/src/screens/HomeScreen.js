@@ -19,29 +19,33 @@ export default function HomeScreen({ navigation }) {
           />
           <Text style={styles.title}>Onoodor her baina?</Text>
         </View>
-        <View style={styles.vm2}>
-          <Text style={styles.txt1}> Дагасан сэдвүүд</Text>
-          <View style={styles.vm2_1}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_2}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_3}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_4}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_5}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_6}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
-          <View style={styles.vm2_7}>
-            <Text style={styles.txt2}>Gantsaardal</Text>
-          </View>
+        <View style={styles.vm6}>
+          <Text style={styles.txt1}> Дагасан сэдвүүд:</Text>
+        </View>
+        <View style={styles.view2}>
+          <ScrollView horizontal={true}>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+            <View style={styles.vm2}>
+              <Text style={styles.txt2}>Gantsaardal</Text>
+            </View>
+          </ScrollView>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -62,18 +66,20 @@ const styles = StyleSheet.create({
   vm1: {
     flexDirection: "row",
     height: 60,
-    width: 400,
+    // width: 400,
     alignItems: "center",
     // justifyContent: "center",
     borderWidth: 1,
+    backgroundColor: "red",
   },
   pro1: {
     borderRadius: 30,
-    width: 40,
+    flex: 1,
     height: 40,
     marginLeft: 25,
   },
   title: {
+    flex: 9,
     fontSize: "20",
     marginTop: 7,
     marginLeft: 10,
@@ -82,9 +88,22 @@ const styles = StyleSheet.create({
     color: "grey",
     marginLeft: 20,
   },
-  vm2: {
-    flexDirection: "row",
+  txt2: {
+    marginHorizontal: 10,
+    fontSize: 13,
   },
-  vm2_1: {},
-  vm2_2: {},
+  vm2: {
+    backgroundColor: "grey",
+    borderRadius: 30,
+    justifyContent: "center",
+    // paddingHorizontal: -10,
+    height: 50,
+    marginHorizontal: 5,
+    // paddingVertical: -5,
+  },
+
+  view2: {
+    height: 50,
+    backgroundColor: "yellow",
+  },
 });
