@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import {
   View,
@@ -11,106 +10,99 @@ import {
 export default function TestScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      
       <Text
         onPress={() => navigation.navigate("Home")}
         style={{ fontSize: 26, fontWeight: "bold" }}
-      >
-      </Text>
+      ></Text>
 
-   
-      
       <SafeAreaView style={styles.container}>
         <ScrollView>
           <View style={styles.main}>
-          <ScrollView horizontal={true}>
-                <View style={styles.vm2}>
+            <ScrollView horizontal={true}>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Ганцаардал</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Стресс</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Гэр бүлийн харилцаа</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Хайр дурлал</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Зорилго</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>Сэтгэл хөдлөл</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>#crush</Text>
-                </View>
-                <View style={styles.vm2}>
+              </View>
+              <View style={styles.vm2}>
                 <Text style={styles.txt2}>#seendelt</Text>
-                </View>
+              </View>
             </ScrollView>
           </View>
           <View style={styles.havtan}>
-                <View>
-                <Text style={styles.cl}>Үнэгүй</Text>
+            <View>
+              <Text style={styles.cl}>Үнэгүй</Text>
               <Text style={styles.bold}>Хэрэглэгчийн судалгаа</Text>
-                </View>
-                <Image style={styles.zurag}
-    source={require("../../src/images/natural.jpg")}
-    />
-
+            </View>
+            <Image
+              style={styles.zurag}
+              source={require("../../src/images/natural.jpg")}
+            />
           </View>
           <View style={styles.havtan}>
-                <View>
-                <Text style={styles.cl}>Үнэгүй</Text>
+            <View>
+              <Text style={styles.cl}>Үнэгүй</Text>
               <Text style={styles.bold}>Хэрэглэгчийн судалгаа</Text>
-                </View>
-                <Image style={styles.zurag}
-    source={require("../../src/images/natural.jpg")}
-    />
-
+            </View>
+            <Image
+              style={styles.zurag}
+              source={require("../../src/images/natural.jpg")}
+            />
           </View>
           <View style={styles.havtan}>
-                <View>
-                <Text style={styles.cl}>Үнэгүй</Text>
+            <View>
+              <Text style={styles.cl}>Үнэгүй</Text>
               <Text style={styles.bold}>Хэрэглэгчийн судалгаа</Text>
-                </View>
-                <Image style={styles.zurag}
-    source={require("../../src/images/natural.jpg")}
-    />
-
+            </View>
+            <Image
+              style={styles.zurag}
+              source={require("../../src/images/natural.jpg")}
+            />
           </View>
           <View style={styles.havtan}>
-                <View>
-                <Text style={styles.cl}>Үнэгүй</Text>
+            <View>
+              <Text style={styles.cl}>Үнэгүй</Text>
               <Text style={styles.bold}>Хэрэглэгчийн судалгаа</Text>
-                </View>
-                <Image style={styles.zurag}
-    source={require("../../src/images/natural.jpg")}
-    />
-
+            </View>
+            <Image
+              style={styles.zurag}
+              source={require("../../src/images/natural.jpg")}
+            />
           </View>
           <View style={styles.havtan}>
-                <View>
-                <Text style={styles.cl}>Үнэгүй</Text>
+            <View>
+              <Text style={styles.cl}>Үнэгүй</Text>
               <Text style={styles.bold}>Хэрэглэгчийн судалгаа</Text>
-                </View>
-                <Image style={styles.zurag}
-    source={require("../../src/images/natural.jpg")}
-    />
-
+            </View>
+            <Image
+              style={styles.zurag}
+              source={require("../../src/images/natural.jpg")}
+            />
           </View>
-          
         </ScrollView>
-    </SafeAreaView>
+      </SafeAreaView>
     </View>
   );
 }
 const styles = StyleSheet.create({
-
-
   vm2: {
-    marginBottom:10,
+    marginBottom: 10,
     // backgroundColor: "#EBECF0",
     borderRadius: 20,
     borderColor: "grey",
@@ -126,7 +118,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "#202020",
   },
-  havtan:{
+  havtan: {
     height: 140,
     backgroundColor: "white",
     borderRadius: 15,
@@ -138,33 +130,20 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
-    
   },
-  zurag:{
+  zurag: {
     width: 80,
     height: 100,
     borderRadius: 10,
   },
-  container:{
+  container: {
     // backgroundColor: "#E5E5E5"
   },
-  bold:{
+  bold: {
     fontWeight: "bold",
   },
-  cl:{
+  cl: {
     color: "#ff6700",
     fontWeight: "bold",
-  }
- 
-
-
-
-
-
-
-
-
-
-
+  },
 });
-

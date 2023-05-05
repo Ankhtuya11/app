@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Ionicons from "react-native-vector-icons/Ionicons";
+import { Ionicons, MaterialCommunityIcons, Feather } from "@expo/vector-icons";
 
 // Screens
 import HomeScreen from "./src/screens/HomeScreen";
@@ -26,19 +26,29 @@ function MainContainer() {
             let rn = route.name;
 
             if (rn === homeName) {
-              iconName = focused ? "home" : "home-outline";
+              iconName = focused ? "home" : "home";
             } else if (rn === TestName) {
-              iconName = focused ? "list" : "list-outline";
+              mIcon = focused ? " " : "head-question-outline";
             } else if (rn === ProName) {
-              iconName = focused ? "settings" : "settings-outline";
+              fIcon = focused ? "settings" : "settings-outline";
             }
 
             // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+            return (
+              (<Ionicons name={iconName} size={size} color={color} />),
+              (
+                <MaterialCommunityIcons
+                  name={mIcon}
+                  size={size}
+                  color={color}
+                />
+              ),
+              (<Feather name={fIcon} size={size} color={color} />)
+            );
           },
         })}
         tabBarOptions={{
-          activeTintColor: "orange",
+          activeTintColor: "#ff6700",
           inactiveTintColor: "grey",
           labelStyle: { paddingBottom: 10, fontSize: 10 },
           style: { padding: 10, height: 70 },
