@@ -12,6 +12,7 @@ import {
   Ionicons,
   Octicons,
   SimpleLineIcons,
+  FontAwesome,
 } from "react-native-vector-icons";
 
 export default function ProfileScreen({ navigation }) {
@@ -72,14 +73,43 @@ export default function ProfileScreen({ navigation }) {
         </View>
         <View style={styles.zuraas}></View>
         <View style={styles.ugnuud}>
-          <Text style={styles.txt1}>6ankhtuya zurh x div</Text>
-          <Text style={styles.txt1}>6ankhtuya zurh x div</Text>
-          <Text style={styles.txt1}>6ankhtuya zurh x div</Text>
-          <Text style={styles.txt1}>6ankhtuya zurh x div</Text>
-          <Text style={styles.txt1}>6ankhtuya zurh x div</Text>
+          <Text style={styles.txt2}>6ankhtuya zurh x div</Text>
+          <Text style={styles.txt2}>6ankhtuya zurh x div</Text>
+          <Text style={styles.txt2}>6ankhtuya zurh x div</Text>
+          <Text style={styles.txt2}>6ankhtuya zurh x div</Text>
+          <Text style={styles.txt2}>6ankhtuya zurh x div</Text>
 
-          <View style={styles.meregjilten}></View>
+          <View style={styles.meregjilten}>
+            <Ionicons name="person-circle-outline" style={styles.meregIcon1} />
+            <Text style={styles.meregtext}>end text bnaaa</Text>
+            <FontAwesome
+              name="long-arrow-right"
+              style={{ fontSize: 25, marginLeft: 170 }}
+            />
+          </View>
+          <View style={{ height: 80 }}>
+            <Text
+              style={{
+                fontSize: 20,
+                marginLeft: 30,
+                fontWeight: "bold",
+                color: "#F42916",
+                marginTop: 25,
+              }}
+            >
+              {" "}
+              Гарах
+            </Text>
+          </View>
         </View>
+        {/* <View
+          style={{
+            width: "100%",
+            height: 100,
+            backgroundColor: "white",
+            marginTop: 10,
+          }}
+        ></View> */}
       </ScrollView>
     </SafeAreaView>
   );
@@ -146,6 +176,14 @@ const styles = StyleSheet.create({
     marginLeft: 30,
     fontWeight: "bold",
     color: "#202020",
+    fontSize: 17,
+  },
+  txt2: {
+    marginTop: 25,
+    marginLeft: 30,
+    fontWeight: "bold",
+    color: "#202020",
+    fontSize: 16,
   },
   zuraas: {
     height: 1,
@@ -164,7 +202,18 @@ const styles = StyleSheet.create({
     width: 360,
     height: 50,
     borderRadius: 10,
-    backgroundColor: "grey",
-    marginLeft: 20,
+    backgroundColor: "#E8E9EB",
+    marginLeft: 30,
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+    marginTop: 25,
+  },
+  meregIcon1: {
+    fontSize: 25,
+    marginLeft: 10,
+  },
+  meregtext: {
+    marginLeft: 10,
   },
 });

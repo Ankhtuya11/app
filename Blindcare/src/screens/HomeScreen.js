@@ -13,6 +13,7 @@ import {
   MaterialCommunityIcons,
   Octicons,
   AntDesign,
+  SimpleLineIcons,
 } from "@expo/vector-icons";
 import { EvilIcons, FontAwesome } from "expo-vector-icons";
 
@@ -23,7 +24,15 @@ export default function HomeScreen({ navigation }) {
         
       </View> */}
       <View style={styles.menu}>
+        <Image
+          style={styles.pro111}
+          source={require("../../src/images/logo111.png")}
+        />
+        <Text style={{ fontWeight: "bold", fontSize: 25, marginTop: 8 }}>
+          blindcare
+        </Text>
         <Ionicons name="search" style={styles.SIcon1} />
+        <SimpleLineIcons name="bell" style={styles.SIcon2} />
       </View>
       <ScrollView>
         <View style={styles.vm1}>
@@ -303,12 +312,13 @@ const styles = StyleSheet.create({
     // justifyContent: "center",
     borderWidth: 0,
     backgroundColor: "white",
+    marginTop: 2,
   },
   pro1: {
     borderRadius: 400,
     flex: 1,
     height: 40,
-    marginLeft: 25,
+    marginLeft: 20,
   },
 
   title: {
@@ -485,6 +495,20 @@ const styles = StyleSheet.create({
   //   // alignItems: "center",
   //   // justifyContent: "center",
   // },
-  SIcon1: {},
-  menu: {},
+  SIcon1: {
+    marginLeft: 300,
+  },
+  SIcon2: {},
+  menu: {
+    height: 50,
+    backgroundColor: "white",
+    width: "100%",
+    flexDirection: "row",
+  },
+  pro111: {
+    width: 35,
+    height: 35,
+    marginLeft: 10,
+    marginTop: 7,
+  },
 });
