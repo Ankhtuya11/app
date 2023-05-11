@@ -19,6 +19,12 @@ import { EvilIcons, FontAwesome } from "expo-vector-icons";
 export default function HomeScreen({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
+      {/* <View style={styles.nemehButton}>
+        
+      </View> */}
+      <View style={styles.menu}>
+        <Ionicons name="search" style={styles.SIcon1} />
+      </View>
       <ScrollView>
         <View style={styles.vm1}>
           <Image
@@ -254,11 +260,9 @@ export default function HomeScreen({ navigation }) {
               </Text>
             </View>
           </View>
-
           <View style={styles.vm2_2}>
             <Text style={styles.txt2_2}>Ганцаардал</Text>
           </View>
-
           <View>
             <Text style={styles.setgegdel}>
               Lorem Ipsum is simply dummy text of the printing and typesettina
@@ -467,4 +471,20 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     fontSize: 15,
   },
+  // nemehButton: {
+  //   height: 50,
+  //   width: 50,
+  //   borderRadius: 50,
+  //   backgroundColor: "red",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  // },
+  // addIcon1: {
+  //   color: "blue",
+  //   fontSize: 30,
+  //   // alignItems: "center",
+  //   // justifyContent: "center",
+  // },
+  SIcon1: {},
+  menu: {},
 });

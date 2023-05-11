@@ -1,12 +1,13 @@
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons, MaterialCommunityIcons, Feather } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 // Screens
 import HomeScreen from "./src/screens/HomeScreen";
 import TestScreen from "./src/screens/TestScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
+// import { Header } from "react-native/Libraries/NewAppScreen";
 
 //Screen names
 const homeName = "Home";
@@ -28,22 +29,20 @@ function MainContainer() {
             if (rn === homeName) {
               iconName = focused ? "home" : "home";
             } else if (rn === TestName) {
-              mIcon = focused ? " " : "head-question-outline";
+              iconName = focused
+                ? "head-question-outline"
+                : "head-question-outline";
             } else if (rn === ProName) {
-              fIcon = focused ? "settings" : "settings-outline";
+              iconName = focused ? "menu" : "menu";
             }
 
             // You can return any component that you like here!
             return (
-              (<Ionicons name={iconName} size={size} color={color} />),
-              (
-                <MaterialCommunityIcons
-                  name={mIcon}
-                  size={size}
-                  color={color}
-                />
-              ),
-              (<Feather name={fIcon} size={size} color={color} />)
+              <MaterialCommunityIcons
+                name={iconName}
+                size={size}
+                color={color}
+              />
             );
           },
         })}
@@ -54,9 +53,21 @@ function MainContainer() {
           style: { padding: 10, height: 70 },
         }}
       >
-        <Tab.Screen name={homeName} component={HomeScreen} />
-        <Tab.Screen name={TestName} component={TestScreen} />
-        <Tab.Screen name={ProName} component={ProfileScreen} />
+        <Tab.Screen
+          options={{ headerShown: false }}
+          name={homeName}
+          component={HomeScreen}
+        />
+        <Tab.Screen
+          options={{ headerShown: false }}
+          name={TestName}
+          component={TestScreen}
+        />
+        <Tab.Screen
+          options={{ headerShown: false }}
+          name={ProName}
+          component={ProfileScreen}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
